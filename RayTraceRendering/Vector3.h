@@ -9,14 +9,14 @@ class vector3
 public:
 	vector3();
 	vector3(const double x, const double y, const double z);
-	vector3(const vector3&);
-	vector3(vector3&&);
+	vector3(const vector3& v);
+	vector3(vector3&& v);
 	~vector3();
 
-	vector3& operator=(const vector3&);
-	vector3& operator=(vector3&&);
-	vector3 operator+(const vector3&)const;
-	vector3 operator-(const vector3&)const;
+	vector3& operator=(const vector3& v);
+	vector3& operator=(vector3&& v);
+	vector3 operator+(const vector3& v)const;
+	vector3 operator-(const vector3& v)const;
 	vector3 operator*(double a)const;
 	vector3 operator/(double a)const;
 	vector3 operator-()const;
