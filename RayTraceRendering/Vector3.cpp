@@ -73,5 +73,33 @@ vector3 vector3::operator/(double a) const
 	return vector3(m_x / a, m_y / a, m_z / a);
 }
 
+vector3 vector3::operator-() const
+{
+	return vector3(-m_x, -m_y, -m_z);
+}
+
+bool vector3::operator==(const vector3& v) const
+{
+	return m_x == v.x() && m_y == v.y() && m_z == v.z();
+}
+
+double vector3::dot(const vector3& v) const
+{
+	return m_x * v.x() + m_y * v.y() + m_z * v.z();
+}
+
+vector3 vector3::cross(const vector3& v) const
+{
+	vector3 && res = vector3(-m_z * v.y() + m_y * v.z(), m_z * v.x() - m_x * v.z(), -m_y * v.x() + m_x * v.y());
+	return res;
+}
+
+vector3 vector3::normalize()
+{
+	double inv = 1.0 / length();
+	return vector3(m_x * inv, m_y * inv, m_z * inv);
+}
+
+std::shared_ptr<vector3> vector3::Zero = std::shared_ptr<vector3>(0, 0, 0);
 
 

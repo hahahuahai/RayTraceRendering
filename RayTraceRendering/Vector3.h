@@ -22,8 +22,8 @@ public:
 	vector3 operator-()const;
 	bool operator==(const vector3& v)const;
 
-	double dot(const vector3&)const;//点乘
-	vector3 cross(const vector3&)const;//叉乘
+	double dot(const vector3& v)const;//点乘
+	vector3 cross(const vector3& v)const;//叉乘
 
 	inline double x()const { return m_x; }//得到x、y、z值
 	inline double y()const { return m_y; }
