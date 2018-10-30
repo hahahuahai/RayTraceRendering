@@ -22,7 +22,7 @@ private:
 	double m_distance;
 	std::shared_ptr<vector3> m_position;
 	std::shared_ptr<vector3> m_normal;
-
+public:
 	static std::shared_ptr<IntersectResult> NoHit;
 };
 
