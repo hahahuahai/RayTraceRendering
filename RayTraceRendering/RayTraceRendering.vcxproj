@@ -26,6 +26,7 @@
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="outputInfo.cpp" />
     <ClCompile Include="PerspectiveCamera.cpp" />
+    <ClCompile Include="plane.cpp" />
     <ClCompile Include="Ray.cpp" />
     <ClCompile Include="sphere.cpp" />
     <ClCompile Include="Vector3.cpp" />
@@ -38,6 +39,7 @@
     <ClInclude Include="Material.h" />
     <ClInclude Include="outputInfo.h" />
     <ClInclude Include="PerspectiveCamera.h" />
+    <ClInclude Include="plane.h" />
     <ClInclude Include="Ray.h" />
     <ClInclude Include="sphere.h" />
     <ClInclude Include="Vector3.h" />
