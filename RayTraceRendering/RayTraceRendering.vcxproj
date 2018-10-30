@@ -19,30 +19,37 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Color.cpp" />
-    <ClCompile Include="Geometry.cpp" />
-    <ClCompile Include="IntersectResult.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Material.cpp" />
-    <ClCompile Include="outputInfo.cpp" />
-    <ClCompile Include="PerspectiveCamera.cpp" />
-    <ClCompile Include="plane.cpp" />
-    <ClCompile Include="Ray.cpp" />
-    <ClCompile Include="sphere.cpp" />
-    <ClCompile Include="Vector3.cpp" />
+    <ClInclude Include="base.hpp" />
+    <ClInclude Include="camera.hpp" />
+    <ClInclude Include="catch.hpp" />
+    <ClInclude Include="CImg.h" />
+    <ClInclude Include="color.hpp" />
+    <ClInclude Include="common.hpp" />
+    <ClInclude Include="geometry.hpp" />
+    <ClInclude Include="intersect_result.hpp" />
+    <ClInclude Include="material.hpp" />
+    <ClInclude Include="perspectivecamera.hpp" />
+    <ClInclude Include="plane.hpp" />
+    <ClInclude Include="ray.hpp" />
+    <ClInclude Include="renderer.hpp" />
+    <ClInclude Include="sphere.hpp" />
+    <ClInclude Include="union.hpp" />
+    <ClInclude Include="vector.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CImg.h" />
-    <ClInclude Include="Color.h" />
-    <ClInclude Include="Geometry.h" />
-    <ClInclude Include="IntersectResult.h" />
-    <ClInclude Include="Material.h" />
-    <ClInclude Include="outputInfo.h" />
-    <ClInclude Include="PerspectiveCamera.h" />
-    <ClInclude Include="plane.h" />
-    <ClInclude Include="Ray.h" />
-    <ClInclude Include="sphere.h" />
-    <ClInclude Include="Vector3.h" />
+    <ClCompile Include="color.cpp" />
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="geometry.cpp" />
+    <ClCompile Include="intersect_result.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="material.cpp" />
+    <ClCompile Include="perspectivecamera.cpp" />
+    <ClCompile Include="plane.cpp" />
+    <ClCompile Include="ray.cpp" />
+    <ClCompile Include="renderer.cpp" />
+    <ClCompile Include="sphere.cpp" />
+    <ClCompile Include="union.cpp" />
+    <ClCompile Include="vector.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
