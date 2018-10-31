@@ -1,5 +1,5 @@
 # demo简介
-这个光线追踪渲染器是根据[这个博客的JavaScript版本](https://www.cnblogs.com/miloyip/archive/2010/03/29/1698953.html)改编而成的。此程序为C++版本，基于VS2017。
+这个光线追踪渲染器是根据[这个博客的JavaScript版本](https://www.cnblogs.com/miloyip/archive/2010/03/29/1698953.html)改编而成的。此程序为C++版本，基于VS2017。大家在看代码之前最好阅读以下原作者的博文，以便更容易理解本代码。
 # 重要类的说明
 - **三维向量类**：Vector，用(x,y,z)表示。可以表示向量或者点。
 - **光线类**：Ray，用一个起点o和一个方向d表示。
