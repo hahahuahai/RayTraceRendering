@@ -3,14 +3,17 @@
 
 #include "base.hpp"
 #include "geometry.hpp"
+namespace RayTraceRendering
+{
+	class Union :public Geometry {
+		std::vector<PtrGeometry> m_geometries;
+	public:
+		Union(std::vector<PtrGeometry>);
+		void init();
+		PtrIntersectResult intersect(PtrRay ray);
+	};
 
-class Union:public Geometry{
-    std::vector<PtrGeometry> m_geometries;
-public:
-    Union(std::vector<PtrGeometry>);
-    void init();
-    PtrIntersectResult intersect(PtrRay ray);
-};
+}
 
 
 #endif // UNION_HPP

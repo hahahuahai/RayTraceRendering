@@ -3,8 +3,6 @@
 #include <ctime>
 #include <chrono>
 
-//#define CATCH_CONFIG_MAIN
-//#include "catch.hpp"
 #include "base.hpp"
 #include "vector.hpp"
 #include "renderer.hpp"
@@ -15,10 +13,14 @@
 #include "plane.hpp"
 #include "union.hpp"
 
-
-void renderArea(Renderer &renderer, cil::CImg<unsigned char> &img, PtrGeometry pUnion, PerspectiveCamera& camera, int maxReflect, int x, int y, int w, int h)
+using namespace RayTraceRendering;
+namespace RayTraceRendering
 {
-	renderer.rayTraceReflection(img, std::static_pointer_cast<Geometry>(pUnion), camera, maxReflect, x,y,w,h);
+	void renderArea(Renderer &renderer, cil::CImg<unsigned char> &img, PtrGeometry pUnion, PerspectiveCamera& camera, int maxReflect, int x, int y, int w, int h)
+	{
+		renderer.rayTraceReflection(img, std::static_pointer_cast<Geometry>(pUnion), camera, maxReflect, x, y, w, h);
+	}
+
 }
 
 int main(int argc, char ** argv){

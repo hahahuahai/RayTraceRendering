@@ -20,7 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base.hpp" />
-    <ClInclude Include="camera.hpp" />
     <ClInclude Include="catch.hpp" />
     <ClInclude Include="CImg.h" />
     <ClInclude Include="color.hpp" />
